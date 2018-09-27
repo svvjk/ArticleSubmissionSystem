@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>New Article Submission</title>
+  <style>
+    .content{
+      margin-top: 100px;
+      align-content: center;
+      margin-left: 40%;
+      margin-top: 14%;
+
+    }
+    table{
+      background-color: grey;
+      border: 1px solid #ffffff;
+    }
+    body{
+      
+      background-color: grey;
+      background-image: url(/images/10.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <table>
+<tr><td colspan="2"><h1>New Submission</h1></td></tr>
+
+<%= form_with scope: :art,url: articles_path, local: true do |form| %>
+
+
+
+  
+  <tr>
+    <td>Articleno :</td>
+    <td><%= form.text_field :Articleno %></td>
+  </tr>
+ <tr>
+    <td>Regno :</td>
+    <td><%= form.text_field:Regno %></td>
+  </tr>
+ 
+  <tr>
+    <td>Abstract :</td>
+    <td><%= form.text_area :abstract %></td>
+  </tr>
+  <tr>
+    <td>Articletype :</td>
+    <td><%= form.text_field:Articletype %></td>
+  </tr>
+  
+  
+  <tr>
+    <td>Language :</td>
+    <td><%= form.text_field:Language %></td>
+  </tr>
+  <tr>
+    <td>Article :</td>
+    <td><%= form.text_area :article %></td>
+  </tr>
+ 
+  <tr>
+    <td></td><td><%= form.submit :submit %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+</body>
+</html>

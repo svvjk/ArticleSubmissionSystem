@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Reviewed Article</title>
+  <style>
+    .content{
+      margin-top: 170px;
+      text-align: center;
+      color: green;
+      border: 1px solid black;
+    }
+    #id1{
+      text-align: right;
+      padding-left: 450px;
+    }
+    #id2{
+      text-align: right;
+      padding-right: 450px;
+    }
+    body{
+  background-color: white;
+   margin-top: 100px;
+   background-color: grey;
+  background-image: url(/images/viewlist.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+
+  </style>
+ </head>
+ <body>
+ <div class="content">
+ <h1>Listing articles with status </h1>
+ 
+      <p>
+    Articleno:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status
+    </p>
+ <% @articles.each do |article| %>
+    <p>
+      <%= article.Articleno %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= article.Status %></p>
+  <% end %>
+  	 
+</div>
+</body>
+</html>

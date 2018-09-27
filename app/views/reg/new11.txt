@@ -1,0 +1,32 @@
+<h1>Student Login</h1>
+
+<%= form_with   local: true do |form| %>
+
+
+
+  
+  <p>
+    <%= form.label :RegID %><br>
+    <%= form.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= form.label :contactno %><br>
+    <%= form.text_field :title %>
+  </p>
+ <p>
+    <%= form.label :Emailid %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :currentsemester %><br>
+    <%= form.text_field :title %>
+  </p>
+    <p>
+    <%= form.label :password %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
